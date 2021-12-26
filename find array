@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
 #define endl "\n"
 using namespace std;
 
