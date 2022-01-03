@@ -1,0 +1,61 @@
+//nesting in vectors
+//nesting in pair
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+
+void printvect(vector<pair<int,int>>&v) 
+{
+    cout<<"size: "<<v.size()<<endl;   
+    f(i,v.size()){
+        cout<<v[i].first<<" "<<v[i].second<<endl;
+    }
+}
+int main(){
+    vector<pair<int,int>>v={{1,2},{4,5} };
+    printvect(v);
+}
+
+//nesting in vector of vector
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+
+void printvect(vector<int>&v) 
+{
+    cout<<"size: "<<v.size()<<endl;   
+    for(int i=0;i<v.size();i++){
+        cout<<v[i];
+    }
+}
+int main(){
+    vector<vector<int>>v;
+    int N,i=0;
+    cin>>N;
+    f(i,N){
+        int n;
+        cin>>n;
+        v.push_back(vector<int>{});
+    
+    }
+    f(j,v.size()){
+        int x;
+        cin>>x;
+        v[j].push_back(x);
+    }
+    f(i,v.size())
+    printvect(v[i]);
+}
+
+
+
+
+
+
+
+
+
