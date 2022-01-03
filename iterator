@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+//#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+//#define endl "\n"
+//
+//void printvect(vector<int>&v) 
+//{
+//    cout<<"size: "<<v.size()<<endl;   
+//    for(int i=0;i<v.size();i++){
+//        cout<<v[i];
+//    }
+//}
+int main(){
+    vector<int>v={1,23,4,34,6,8};
+   
+    f(i,v.size()){
+        
+        cout<<v[i];
+        
+    }
+    vector<int>::iterator it=v.begin();
+    cout<<*it+1<<endl;
+    for(it=v.begin();it!=v.end();it++){
+        cout<<(*it)<<endl;
+    
+}
+}
+
+
+
+
+
