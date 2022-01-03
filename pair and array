@@ -1,0 +1,47 @@
+
+///code for pair
+
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+int main(){
+int a[]={1,2,3};
+int b[]={4,5,6};
+   pair<int,int>p_array[3];
+   p_array[0]={1,4};
+   p_array[1]={2,5};
+    p_array[2]={3,6};
+    swap(p_array[0],p_array[2]);
+    f(i,3){
+        cout<<p_array[i].first<<" "<<p_array[i].second<<endl;
+    }
+
+}
+//code for vector
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+     void printvec(vector<int>v){
+     cout<<"size: "<<v.size()<<endl;
+     f(i,v.size()){
+         cout<<v[i]<<endl;
+     }
+     }
+int main()
+{
+
+ 
+      vector<int>v;
+      int n;
+      cin>>n;
+      f(i,n){
+          int x;
+          cin>>x;
+          v.push_back(x);
+      }
+      printvec(v);
+}
