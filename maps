@@ -1,0 +1,50 @@
+important point
+1-store some value in key
+2-uniq key  but can have diffrent value
+3-print in sorted order 
+4-nesting is posssible
+
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+//#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+//#define endl "\n"
+//
+//void printvect(vector<int>&v) 
+//{
+//    cout<<"size: "<<v.size()<<endl;   
+//    for(int i=0;i<v.size();i++){
+//        cout<<v[i];
+//    }
+//} 
+void printmp(map<int,string>mp){
+        cout<<"size: "<<mp.size()<<endl;
+        for(auto &pr:mp){
+            cout<<pr.first<<" "<<pr.second<<endl;
+        }
+}
+int main(){
+       map<int,string>mp;
+      mp[1]="abc";   
+      mp[2]="bcd";
+      mp[5]="gfg";
+      mp[4]="pqr";
+      
+      //to find some element
+      auto it=mp.find(2);
+      if(it==mp.end()){
+          cout<<"NO VALUE"<<endl;
+      } else {
+          cout<<(*it).first<<" "<<(*it).second<<endl;
+      }
+      //other to print same thing
+      for( auto it=mp.begin();it!=mp.end();it++){
+          cout<<(*it).first<<" "<<(*it).second<<endl;
+      }
+      printmp(mp);
+}
+
+
