@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=2;x<n;x++)
+#define endl "\n"
+using namespace std;
+ const int  N= 1e5 +10;
+ const int M =1e9 +7;
+ long long fact[N];
+    int main(){
+        int t;
+        fact[0]=fact[1]=1;
+        f(i,N){
+            fact[i]=fact[i-1]*i;
+            
+        }
+        
+        cin>>t;
+        
+        while(t--){
+            int n;
+            cin>>n;
+            cout<<fact[n]<<endl;
+            
+        }
+    }
+ 
+//O(n)+O(t)=10^5+10^5
