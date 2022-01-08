@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+bool ispositive(int x){
+    return(x>0);
+}
+
+void solve()
+{
+    
+    vector<int>v={1,4,-1};
+      cout<<all_of(v.begin(),v.end(),ispositive);
+    
+    
+    
+
+
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    ll t;
+    cin>>t;
+
+
+    while(t--)
+    { 
+
+        solve();
+
+    }
+return 0;
+}
