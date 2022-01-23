@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+void substring( char str[], int n){
+    for(int len=0;len<=n;len++){
+        for(int i=0;i<=n-len;i++){
+            int j=i+len-1;
+            for(int k=i;k<=j;k++){
+                cout<<str[k];
+               
+            } cout<<endl;
+        }
+    }
+}
+void solve()
+{
+    
+    char str[]="abcd";
+    substring(str,strlen(str));
+
+
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    //ll t;
+    //cin>>t;
+//
+//
+    //while(t--)
+    { 
+
+        solve();
+
+    }
+return 0;
+}
