@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+void pangrams(string str){
+      int count =0;
+      transform(str.begin(),
+              str.end(),
+              str.begin(),
+              ::toupper);
+  
+      //sort the array 
+      sort(str.begin(),str.end());
+      
+    for(int len=0;len<=str.length();len++){
+        if(str[len]!=str[len+1]){
+            count++;
+            
+        }
+    }
+    if(count==27){
+        cout<<"YES"<<endl;
+    } else 
+    {
+        cout<<"NOT"<<endl;
+    }
+    
+}
+void solve()
+{
+    
+     string str = "e promptly "
+                 "judged antique"
+                 "ivory buckles for "
+                 "the next prizew";
+  
+    // Function Call
+     pangrams(str);
+
+
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    //ll t;
+    //cin>>t;
+//
+//
+    //while(t--)
+    { 
+
+        solve();
+
+    }
+return 0;
+}
