@@ -1,0 +1,59 @@
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+
+   
+   void fuc(int close , int open , string op,vector<string>&v){
+      
+        if(close==0&&open==0){
+        v.push_back(op);
+        return;
+    }
+    if(open!=0){
+        string op1=op;
+        v.push_back("(");
+        fuc(close ,open-1,op1,v);
+    }
+    if(open<close){
+        string op2=op;
+        v.push_back(")");
+        fuc(close-1,open,op2,v);
+    }
+}
+       
+   
+void solve()
+{
+   
+    int n;
+    cin>>n;
+    int close =n;
+    int open =n;
+   string op=" ";
+   vector<string>v;
+   fuc(close,open,op,v);
+    for(auto op:v){
+        cout<<op;
+        
+    }
+  cout<<endl;
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+   // ll t;
+   // cin>>t;
+//
+//
+   // while(t--)
+    { 
+
+        solve();
+
+    }
+return 0;
+}
