@@ -1,0 +1,58 @@
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=0;x<n;x++)
+#define endl "\n"
+using namespace std;
+const int N=1e6+10;
+int n;
+long long m;
+long long tree[N];
+  bool iswoodsufficiant(int h){
+      int wood;
+      f(i,n){
+          if(tree[i]>=h){
+              wood+=tree[i]-h;
+          }
+      }
+      return wood>=m;
+  }
+
+void solve()
+{
+    int n,m;
+   cin>>n>>m;
+   f(i,n){
+       cin>>tree[i];
+   }
+   long long low=0,hi=1e9,mid;
+   while(hi-low>1){
+       long long mid=(hi+low)/2;
+       if(iswoodsufficiant(mid)){
+           low =mid;
+       } else {
+           hi =mid-1;
+       }
+   }
+   if(iswoodsufficiant(hi)){
+       cout<<hi<<endl;
+   } else {
+       cout<<low<<endl;
+   }
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    ll t;
+    cin>>t;
+
+
+    while(t--)
+    { 
+
+        solve();
+
+    }
+return 0;
+}
