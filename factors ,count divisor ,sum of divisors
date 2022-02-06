@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+#define ll long long int
+# define  f(x,n) for(int x=1;x<=n;x++)
+#define endl "\n"
+using namespace std;
+
+void solve()
+{
+
+   int ct=0, n;
+     cin>>n;
+     int sum=0;
+   f(i,n){
+    if(n%i==0){
+        cout<< i <<endl;
+        ct++;
+        sum+=i;
+    }
+}
+   cout<<ct<<" "<<sum<<endl;
+}
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+   
+    
+    ll t;
+    cin>>t;
+
+
+    while(t--)
+    { 
+
+        solve();
+
+    }
+return 0;
+}
