@@ -1,8 +1,16 @@
 #include <bits/stdc++.h>
 #define ll long long int
 # define  f(x,n) for(int x=0;x<n;x++)
+#define printv(v) for(ll i=0;i<ll(v.size());i++){cout<<v[i]<<" ";} cout<<endl;
+#define no cout<<"NO"<<endl;
+#define yes cout<<"YES"<<endl;
 #define endl "\n"
+#define ff first
+#define ss second
 using namespace std;
+const ll INF=1e18;
+const ll mod1=1e9+7;
+const ll mod2=998244353;
 
 void solve()
 {
