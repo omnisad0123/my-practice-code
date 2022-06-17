@@ -6,13 +6,17 @@
 #define yes cout<<"YES"<<endl;
 #define endl "\n"
 #define ff first
+#define putn(a)         cout<<a<<"\n";
+#define put(a)          cout<<a<<" ";
+#define get(a)          int a; cin>>a;
+#define getl(a)         long long a; cin>>a;
 #define ss second
 using namespace std;
 const ll INF=1e18;
 const ll mod1=1e9+7;
 const ll mod2=998244353;
 
-void solve()
+void op()
 {
     ll n;
     cin>>n;
@@ -39,7 +43,7 @@ int main()
     while(t--)
     { 
 
-        solve();
+        op();
 
     }
 return 0;
